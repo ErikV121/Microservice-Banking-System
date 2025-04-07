@@ -8,6 +8,7 @@ import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface AccountMapper {
+    @Mapping(target = "accountId", source = "accountId")
     @Mapping(target = "customerId", source = "customer.customerId")
     AccountResponseDto toAccountResponseDto(Account account);
 
