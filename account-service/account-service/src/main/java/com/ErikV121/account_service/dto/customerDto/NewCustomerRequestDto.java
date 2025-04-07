@@ -16,5 +16,7 @@ public record NewCustomerRequestDto(
         @Pattern(regexp = "^\\d{3}-\\d{3}-\\d{4}$", message = "Mobile number must be in format XXX-XXX-XXXX")
         String mobileNumber,
 
+        @NotBlank(message = "SSN cannot be blank")
+//      TODO add SSN validation
         String ssn
 ) {}
