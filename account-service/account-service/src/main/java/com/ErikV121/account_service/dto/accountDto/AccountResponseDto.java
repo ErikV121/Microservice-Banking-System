@@ -5,7 +5,7 @@ import com.ErikV121.account_service.entity.enums.AccountType;
 import java.util.UUID;
 
 public record AccountResponseDto(
-        Long accountNumber,
+        Long accountId,
         UUID customerId,
         AccountType accountType,
         String branchAddress,
